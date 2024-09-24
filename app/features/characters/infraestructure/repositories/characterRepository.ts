@@ -8,7 +8,7 @@ export class CharacterRepositoryImp extends CharacterRepository {
         super();
         this.dataSource = dataSource;
     }
-    getCharacters(page: number): Promise<CharacterResult[]> {
+    getCharacters(page: number): Promise<CharacterResult> {
         return this.dataSource.getCharacters(page);
     }
 }
